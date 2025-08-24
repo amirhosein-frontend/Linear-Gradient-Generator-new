@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Gradient</title>
+    <link rel="icon" type="image/png" href="./Icon_rounded.png" />
+    <link rel="stylesheet" href="./bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="linearGradient"><h1>Linear Gradiant</h1></header>
+    <main class="box container-md">
+      <div class="row g-5 justify-content-center align-items-center p-4">
+        <section class="baseFlex linebox col-lg-6 col-md-7 col-sm-8 col-12 order-lg-0 order-0">
+          <h2>Line-Slider</h2>
+          <div class="line">
+            <div class="circle1 circle"></div>
+            <div class="circle2 circle"></div>
+            <div class="line-hr"></div>
+          </div>
+        </section>
+        <section class="baseFlex gradient-box col-lg-3 col-md-5 col-sm-4 col-12 order-lg-1 order-1">
+          <h2>Gradient</h2>
+          <div class="main-circle  circles">
+            <div class="little-circle circles"></div>
+          </div>
+        </section>
+        <section class="baseFlex selection-box col-lg-3 col-md-4 col-sm-4 col-12 order-lg-2 order-4">
+          <h2>Select type:</h2>
+          <div class="select">
+            <button type="submit" class="selectBtn" id="btn1"></button>
+            <button type="submit" class="selectBtn" id="btn2"></button>
+            <button type="submit" class="selectBtn" id="btn3"></button>
+          </div>
+        </section>
+        
+        <section class="baseFlex codeBox col-lg-6 col-md-8  col-sm-8 col-12 order-lg-3 order-5">
+          <h2>Code linear gradiant color</h2>
+          <div class="coderBox"></div>
+        </section>
+        <section class="baseFlex colorbox1 col-lg-3 col-sm-6 order-lg-4 order-2">
+          <h2>First Color</h2>
+          <input type="color" class="colorinput" id="color1" />
+        </section>
+        <section class="baseFlex colorbox2 col-lg-3 col-sm-6 order-lg-5 order-3">
+          <h2>Second Color</h2>
+          <input type="color" class="colorinput" id="color2" />
+        </section>
+      </div>
+    </main>
+    <script src="./dynamic.js"></script>
+  </body>
+</html>

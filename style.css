@@ -1,0 +1,340 @@
+/* base font */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./static/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Light (300) */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./static/SpaceGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./static/SpaceGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./static/SpaceGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./static/SpaceGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./static/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --min-rowWidth: 130px;
+  --maxMuted: #505050;
+  --baseRaduis: 1.3rem;
+  --widthCircle: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+}
+body {
+  font-family: "Space Grotesk", sans-serif, "Arial Narrow Bold";
+}
+.linearGradient {
+  width: 100vw;
+  height: 200px;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  font-size: clamp(0.8rem, 4vw, 1.6rem);
+  color: rgba(244, 244, 244, 0.803);
+  text-shadow: 1px 1px 1rem;
+}
+.box {
+  min-height: 450px;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  background: rgba(250, 245, 242, 1);
+}
+.row {
+  min-height: 200px;
+}
+h2 {
+  font-size: clamp(0.8rem, 5vw, 1.3rem);
+}
+.baseFlex {
+  min-height: var(--min-rowWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.line {
+  height: 20px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 0px 10px;
+  position: relative;
+}
+.circle {
+  width: 20px;
+  height: 35px;
+  border-radius: 30%;
+  border-color: var(--maxMuted);
+  border-width: 1px;
+  border-style: solid;
+  position: absolute;
+  top: -8px;
+}
+.circle1 {
+  left: 0px;
+  position: relative;
+}
+.circle2 {
+  left: 91%;
+}
+.span {
+  text-align: center;
+  font-size: clamp(0.5rem, 3vw, 0.9rem);
+  width: clamp(25px, 6vw, 35px);
+  aspect-ratio: 1.4/0.8;
+  position: absolute;
+  bottom: -24px;
+  font-weight: 600;
+  border-radius: 4px;
+  background: rgba(250, 245, 242, 1);
+  padding: 0px 1px;
+  border-color: var(--maxMuted);
+  border-width: 0.5px;
+  border-style: solid;
+  left: -7px;
+}
+.line-hr {
+  height: 1px;
+  background: var(--maxMuted);
+  margin-top: 4px;
+}
+.main-circle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  align-self: end;
+}
+.little-circle {
+  width: var(--widthCircle);
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-color: black;
+  left: 83%;
+  top: 46%;
+}
+.circles {
+  border-radius: 50%;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+.select {
+  display: flex;
+  align-self: end;
+  gap: clamp(3px, 1vw, 6px);
+  flex-wrap: wrap;
+}
+.selectBtn {
+  width: clamp(40px, 8vw, 55px);
+  aspect-ratio: 1 / 1;
+  border-radius: 25%;
+  border-width: 1px;
+  border: transparent;
+}
+
+#btn1 {
+  background: radial-gradient(
+    circle,
+    rgb(199, 199, 199) 8%,
+    rgb(36, 36, 36) 74%
+  );
+}
+#btn2 {
+  background: radial-gradient(
+    ellipse,
+    rgb(19, 242, 7) 0%,
+    rgb(7, 61, 237) 100%
+  );
+}
+#btn3 {
+  background: linear-gradient(to right, red, blue);
+}
+.colorinput {
+  height: 100px;
+  width: 100%;
+  min-width: 70px;
+  border-radius: var(--baseRaduis);
+  padding: 0;
+  border: 1px solid #535353a1;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  overflow: hidden;
+}
+.colorinput::-webkit-color-swatch-wrapper {
+  padding: 0;
+  margin: 0;
+}
+.colorinput::-webkit-color-swatch {
+  border: none;
+  border-radius: 0;
+}
+.coderBox {
+  min-height: 4rem;
+  background-color: #4224ee;
+  padding: clamp(0.7rem, 4vw, 1rem);
+  border-radius: var(--baseRaduis);
+  display: flex;
+  align-items: center;
+}
+.linearCode {
+  color: white;
+  cursor: pointer;
+}
+.coderBox p {
+  font-weight: 400;
+  font-size: clamp(0.7rem, 4vw, 1rem);
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .box {
+    box-shadow: 1px 1px 10px;
+    height: clamp(600px, 80vh, 800px);
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  :root {
+    --min-rowWidth: 130px;
+  }
+  body,
+  html {
+    height: 100vh;
+  }
+  body {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top;
+  }
+  .linearGradient {
+    background: transparent;
+  }
+  .box {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: saturate(160%) blur(20px);
+    border-radius: 1.5rem;
+  }
+  .colorinput {
+    background: transparent;
+  }
+  .main-circle {
+    width: 90px;
+    height: 90px;
+  }
+  .coderBox {
+    background-color: #2600fc8a;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  :root {
+    --widthCircle: 12px;
+  }
+  body,
+  html {
+    height: 100vh;
+  }
+  body {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .linearGradient {
+    background: transparent;
+  }
+  .box {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: saturate(160%) blur(20px);
+    border-radius: 1.5rem;
+  }
+  .colorinput {
+    background: transparent;
+  }
+  .main-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .coderBox {
+    background-color: #2600fc8a;
+  }
+}
+@media (min-width: 1201px) {
+  :root {
+    --widthCircle: 12px;
+  }
+  body,
+  html {
+    height: 100vh;
+  }
+  body {
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .linearGradient {
+    background: transparent;
+  }
+  .box {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: saturate(160%) blur(20px);
+    border-radius: 1.5rem;
+  }
+  .colorinput {
+    background: transparent;
+  }
+  .main-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .coderBox {
+    background-color: #2600fc8a;
+  }
+}
