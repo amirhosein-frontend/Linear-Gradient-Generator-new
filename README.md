@@ -18,6 +18,7 @@ The overall look of the page has been updated for a more modern and minimal appe
     cd project-name
 3. Open index.html in your browser.
 
+Fast way : https://amirhosein-frontend.github.io/Linear-Gradient-Generator-new/
 ## 📱 Responsive Design
 
 Mobile (≤576px)
