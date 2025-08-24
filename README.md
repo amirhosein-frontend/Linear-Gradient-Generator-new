@@ -18,7 +18,7 @@ The overall look of the page has been updated for a more modern and minimal appe
     cd project-name
 3. Open index.html in your browser.
 
-📱 Responsive Design
+## 📱 Responsive Design
 
 Mobile (≤576px)
 
@@ -28,7 +28,7 @@ Laptop (993px–1200px)
 
 Desktop (≥1201px)
 
-🛠 Built With
+## 🛠 Built With
 
 HTML5
 
@@ -36,4 +36,4 @@ CSS3
 
 Bootstrap 5 Grid
 
-✍️ This new version focuses on simplicity, performance optimization, and responsiveness.
+## ✍️ This new version focuses on simplicity, performance optimization, and responsiveness.
